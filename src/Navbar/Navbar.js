@@ -20,7 +20,9 @@ text-shadow: 1px 1px 4px #380502;
 export function Navbar(){
     return (
       <NavbarStyled>
-        <Logo>Sliceline 🍕</Logo>
+        <Logo>
+          Sliceline <span role="img" aria-label="pizza slice">🍕</span>
+        </Logo>
       </NavbarStyled>
     );
 }
