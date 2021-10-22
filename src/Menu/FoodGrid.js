@@ -6,7 +6,7 @@ export const FoodGrid = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 `
-export const FoodLabel = styled.div`
+export const FoodLabel = styled(Title)`
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
@@ -17,7 +17,7 @@ export const Food = styled(Title)`
     height: 100px;
     padding: 10px;
     font-size: 20px;
-    background-image: ${({ img }) => `url(${img});`}
+    background-image: ${({ img }) => `url(${img});`};
     background-position: center;
     background-size: cover;
     filter: contrast(75%);
